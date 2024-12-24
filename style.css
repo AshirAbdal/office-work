@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+  color: aliceblue;
+  background-color: rgb(20, 30, 50);
+  font-family: "Raleway", sans-serif;
+}
+
+/* Hero Section */
+img {
+  width: 70%;
+  object-fit: cover;
+}
+
+.hero-img {
+  margin: 0 auto;
+  display: block;
+}
+
+.hero-title {
+  text-align: center;
+  color: orangered;
+  font-size: 6rem;
+}
+
+.hero-subtitle {
+  font-size: 2.4rem;
+  color: orangered;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Author and Social Section */
+.author-social-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 70%;
+}
+
+.author {
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.author-name a {
+  color: aliceblue;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.author-name a:hover {
+  background-color: #306203;
+  padding: 0.2rem 0.4rem;
+}
+
+.publish-date {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.4rem;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.social-icons a {
+  color: aliceblue;
+  font-size: 2.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: orangered;
+}
+
+/* General Text Section Styles */
+.text {
+  margin: 2rem auto;
+  padding: 1rem;
+  
+  font-family: 'Georgia', serif; /* Classic font for elegant text */
+  line-height: 1.8;
+  color: aliceblue;
+  text-align: justify;
+}
+
+/* Style for the first letter */
+.text .first-paragraph::first-letter {
+  font-size: 5rem; /* Large size for the drop cap */
+  font-weight: bold;
+  color: orangered;
+  float: left;
+  line-height: 1;
+  margin-right: 0.5rem;
+}
+
+.quote {
+  color: #00beef;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+
+.quote::before {
+  content: '" ';
+}
+
+.quote::after {
+  content: ' "';
+}
+
+.text {
+  
+  
+  font-size: 1.2rem;
+  letter-spacing: 0.6px;
+  column-width: 25rem; /* Sets the width of columns in the text */
+  text-align: justify;
+  padding: 1rem;
+}
+
+
+--------------------------------------------------------------------------
+
+.text-with-images {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.lists {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+
+.lists li {
+  margin-bottom: 1.5rem;
+}
+
+.list-title, .list-subtitle {
+  color: #00beef;
+}
+
+.image-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, min-content);
+  gap: 2rem;
+  place-items: center;
+}
+
+.image-1, .image-3 {
+  grid-column: 1 / -1;
+}
