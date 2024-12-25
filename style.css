@@ -156,3 +156,63 @@ img {
 .image-1, .image-3 {
   grid-column: 1 / -1;
 }
+
+@media only screen and (max-width: 320px) {
+
+  .text {
+    font-size: 1rem;
+    column-width: 20rem;
+  }
+
+  .hero-title {
+    font-size: 20px;
+  }
+
+  .hero-subtitle {
+    font-size: 15px;
+  }
+
+  .author-social-wrapper {
+    max-width: 90%;
+  }
+
+  .author {
+    font-size: 1.2rem;
+  }
+
+  .social-icons a {
+    font-size: 2rem;
+  }
+
+  .quote {
+    font-size: 1.2rem;
+  }
+
+  .lists {
+    margin-top: 1rem;
+  }
+
+  .lists li {
+    margin-bottom: 1rem;
+  }
+
+  .list-title, .list-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .image-wrapper {
+    gap: 1rem;
+  }
+
+  .image-1, .image-3 {
+    grid-column: 1 / -1;
+  }
+  .author-social-wrapper {
+    display: flex;
+    flex-direction: column;   
+
+    /* max-width: 70%; */
+}
+
+
+}
